@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKD Prediction</title>
+</head>
+<body>
+    <h1>Chronic Kidney Disease (CKD) Prediction</h1>
+
+    <form action="/predict" method="POST">
+        <label for="age">Age:</label>
+        <input type="text" name="age" required><br><br>
+
+        <label for="bp">Blood Pressure:</label>
+        <input type="text" name="bp" required><br><br>
+
+        <label for="sg">Specific Gravity:</label>
+        <input type="text" name="sg" required><br><br>
+
+        <label for="al">Albumin:</label>
+        <input type="text" name="al" required><br><br>
+
+        <label for="su">Sugar:</label>
+        <input type="text" name="su" required><br><br>
+
+        <label for="rbc">Red Blood Cells (RBC):</label>
+        <input type="text" name="rbc" required><br><br>
+
+        <label for="pc">Pus Cells (PC):</label>
+        <input type="text" name="pc" required><br><br>
+
+        <label for="pcc">Pus Cell Clumps (PCC):</label>
+        <input type="text" name="pcc" required><br><br>
+
+        <label for="ba">Bacteria Presence (Ba):</label>
+        <input type="text" name="ba" required><br><br>
+
+        <label for="pcv">Packed Cell Volume (PCV):</label>
+        <input type="text" name="pcv" required><br><br>
+
+        <label for="wbcc">White Blood Cell Count (WBCC):</label>
+        <input type="text" name="wbcc" required><br><br>
+
+        <label for="rbcc">Red Blood Cell Count (RBCC):</label>
+        <input type="text" name="rbcc" required><br><br>
+
+        <label for="htn">Hypertension (HTN):</label>
+        <input type="text" name="htn" required><br><br>
+
+        <label for="dm">Diabetes Mellitus (DM):</label>
+        <input type="text" name="dm" required><br><br>
+
+        <label for="cad">Coronary Artery Disease (CAD):</label>
+        <input type="text" name="cad" required><br><br>
+
+        <label for="appet">Appetite:</label>
+        <input type="text" name="appet" required><br><br>
+
+        <label for="pe">Pedal Edema (PE):</label>
+        <input type="text" name="pe" required><br><br>
+
+        <label for="ane">Anemia (Ane):</label>
+        <input type="text" name="ane" required><br><br>
+
+        <button type="submit">Predict CKD</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction Result: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
