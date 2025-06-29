@@ -26,7 +26,7 @@ pip install streamlit pandas numpy scikit-learn plotly
 
 3. Run the Streamlit app:
 ```bash
-streamlit run app.py
+streamlit run app.py 
 ```
 
 The application will open in your default web browser.
